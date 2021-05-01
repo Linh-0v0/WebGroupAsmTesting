@@ -7,7 +7,7 @@ function check(){
         // alert("Login successfully")
         const emailvalue = document.getElementById("email").value;
         displayemail.setAttribute("value", "emailvalue");
-        window.location.href="http://linh-0v0.github.io/WebGroupAsmTesting/my-account.html";
+        location.pathname="my-account.html";
         return false;
     } else {
         alert("Wrong password!");
