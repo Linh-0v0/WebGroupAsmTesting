@@ -5,8 +5,6 @@ var displayemail = document.getElementById("DisplayEmail");
 function check(){
     if(password.value == "password"){
         // alert("Login successfully")
-        const emailvalue = document.getElementById("email").value;
-        displayemail.setAttribute("value", "emailvalue");
         window.location.href = "/my-account.html";
         return false;
     } else {
@@ -14,4 +12,7 @@ function check(){
     }
 }
 
-
+function displayEmail(){
+    const emailvalue = document.getElementById("email").value;
+    displayemail.setAttribute("value", "emailvalue");
+}
