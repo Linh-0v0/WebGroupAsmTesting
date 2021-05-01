@@ -5,7 +5,7 @@ var displayemail = document.getElementById("DisplayEmail");
 function check(){
     if(password.value == "password"){
         // alert("Login successfully")
-        window.location.href = "/my-account.html";
+        window.open = "my-account.html";
         return false;
     } else {
         alert("Wrong password!");
