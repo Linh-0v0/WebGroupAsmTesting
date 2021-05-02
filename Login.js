@@ -1,5 +1,4 @@
 function check(){
-    var emailvalue = document.getElementById("email").value;
     var password = document.getElementById("password");  
     if(password.value == "password"){
         // alert("Login successfully")
