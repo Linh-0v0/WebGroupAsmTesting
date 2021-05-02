@@ -1,18 +1,19 @@
-var email = document.getElementById("email");
+var emailvalue = document.getElementById("email").value;
 var password = document.getElementById("password");
 var displayemail = document.getElementById("DisplayEmail");    
+var inputEmail;
 
 function check(){
     if(password.value == "password"){
         // alert("Login successfully")
-        window.open = "my-account.html";
+        window.location.href = "my-account.html";
     } else {
         alert("Wrong password!");
     }
 }
 
-function displayEmail(){
-    const emailvalue = document.getElementById("email").value;
-    displayemail.setAttribute("value", "emailvalue");
+function showEmail(){
+    inputEmail = emailvalue;
+    displayemail.setAttribute("value", inputEmail);
 }
 
