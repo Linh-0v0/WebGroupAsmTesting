@@ -4,9 +4,9 @@ function check(){
     if(password.value == "password"){
         // alert("Login successfully")
         let Loginn = document.getElementsByClassName("btn").addEventListener("click", () => {
-        let inputEmail = document.getElementById("email").value;
+            let inputEmail = document.getElementById("email").value;
 });
-        window.location.href = "my-account.html";
+        location.replace = "my-account.html";
     } else {
         alert("Wrong password!");
     }
