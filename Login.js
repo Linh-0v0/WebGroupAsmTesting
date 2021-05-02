@@ -1,22 +1,17 @@
-var emailvalue = document.getElementById("email").value;
-var password = document.getElementById("password");
-var displayemail = document.getElementById("DisplayEmail");    
-var inputEmail;
-
-function showEmail(){
-    inputEmail = emailvalue;
-    displayemail.setAttribute("value", inputEmail);
-}
-
 function check(){
+    var emailvalue = document.getElementById("email").value;
+    var password = document.getElementById("password");  
     if(password.value == "password"){
         // alert("Login successfully")
-        showEmail()
+        let Loginn = document.getElementsByClassName("btn").addEventListener("click", () => {
+        let inputEmail = document.getElementById("email").value;
+});
         window.location.href = "my-account.html";
     } else {
         alert("Wrong password!");
     }
 }
+
 
 
 
