@@ -23,9 +23,9 @@
 
         // Auto redirect to "My Account" if already logged in
         let myAccountURL = currentURL;
-        myAccountURL = myAccountURL.replace("Login_box.html", "");
-        myAccountURL = myAccountURL.replace("register_acc.html", "");
-        myAccountURL = myAccountURL.replace("forgotPass.html", "");
+        myAccountURL = myAccountURL.replace("Login_box", "");
+        myAccountURL = myAccountURL.replace("register_acc", "");
+        myAccountURL = myAccountURL.replace("forgotPass", "");
         myAccountURL += "my-account";
         window.location.replace(myAccountURL);
     }
