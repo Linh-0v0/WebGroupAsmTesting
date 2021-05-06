@@ -16,9 +16,9 @@
     // Redirect to My Account if the user is already logged in and tries to open either Login, Register, or Forgot Password
     let currentURL = window.location.href;
     if (
-        currentURL.indexOf("Login_box.html") !== -1 ||
-        currentURL.indexOf("register_acc.html") !== -1 ||
-        currentURL.indexOf("forgotPass.html") !== -1
+        currentURL.indexOf("Login_box") !== -1 ||
+        currentURL.indexOf("register_acc") !== -1 ||
+        currentURL.indexOf("forgotPass") !== -1
     ) {
 
         // Auto redirect to "My Account" if already logged in
@@ -26,7 +26,7 @@
         myAccountURL = myAccountURL.replace("Login_box.html", "");
         myAccountURL = myAccountURL.replace("register_acc.html", "");
         myAccountURL = myAccountURL.replace("forgotPass.html", "");
-        myAccountURL += "my-account.html";
+        myAccountURL += "my-account";
         window.location.replace(myAccountURL);
     }
 }
