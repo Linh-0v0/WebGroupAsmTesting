@@ -1,15 +1,15 @@
-// Get entered email on login page from local storage
-const USER_EMAIL = localStorage.getItem("email");
+// Get input email from localStorage
+const LoginEmail = localStorage.getItem("email");
 
-// Get email element from my-account page
-const LOGIN_EMAIL = document.getElementById("DisplayEmail");
+// Get email from my-account page
+const userEmail = document.getElementById("DisplayEmail");
 
-// Change email field to entered email value
-LOGIN_EMAIL.innerHTML = USER_EMAIL;
+// Change email field to input email 
+userEmail.innerHTML = LoginEmail;
 
 // Redirect the user back to Login page if the user hasn't logged in
-if (localStorage.isLoggedIn === null || localStorage.isLoggedIn === "false") {
+if (localStorage.LoggedIn === null || localStorage.LoggedIn === "false") {
     let url = window.location.href;
-    url = url.replace("my-account.html", "Login_box.html");
+    url = url.replace("my-account", "Login_box");
     window.location.replace(url);
 }
