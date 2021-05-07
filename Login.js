@@ -8,10 +8,12 @@ const LoginForm = document.getElementById("loginform");
 
 // Check entered password with correct password
 LoginForm.addEventListener("submit", function (event) {
+    console.log("working");
+
     // Get email and password values, and wrong password message
-    const ENTERED_EMAIL = LoginForm.username.value;
-    const ENTERED_PWD = LoginForm.password.value;
-    const WRONG_PASS_MSG = document.getElementById("pass_error");
+    const ENTERED_EMAIL = document.getElementById("email").value;
+    const ENTERED_PWD = document.getElementById("password").value;
+    const WRONG_PASS_MSG = document.querySelector(".pass_error");
 
     // Set email value as local storage item
     localStorage.setItem("email", ENTERED_EMAIL);
