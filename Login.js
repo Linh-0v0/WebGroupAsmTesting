@@ -4,13 +4,13 @@ if (localStorage.getItem("isLoggedIn") === null) {
 }
 
 const CORRECT_PWD = "password";
-const LOGINFORM = document.getElementById("loginform");
+const LoginForm = document.getElementById("loginform");
 
 // Check entered password with correct password
-LOGINFORM.addEventListener("submit", function (event) {
+LoginForm.addEventListener("submit", function (event) {
     // Get email and password values, and wrong password message
-    const ENTERED_EMAIL = LOGINFORM.username.value;
-    const ENTERED_PWD = LOGINFORM.password.value;
+    const ENTERED_EMAIL = LoginForm.username.value;
+    const ENTERED_PWD = LoginForm.password.value;
     const WRONG_PASS_MSG = document.getElementById("pass_error");
 
     // Set email value as local storage item

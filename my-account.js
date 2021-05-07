@@ -10,6 +10,6 @@ LOGIN_EMAIL.innerHTML = USER_EMAIL;
 // Redirect the user back to Login page if the user hasn't logged in
 if (localStorage.isLoggedIn === null || localStorage.isLoggedIn === "false") {
     let url = window.location.href;
-    url = url.replace("my-account", "Login_box");
+    url = url.replace("my-account.html", "Login_box.html");
     window.location.replace(url);
 }
