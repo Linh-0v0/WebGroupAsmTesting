@@ -15,9 +15,9 @@
     font-size: 25px;  
 }
 
-.cicrle_logoutbtn{
+#cicrle_logoutbtn{
     position: absolute;
-    display: none;
+    visibility: hidden;
     right: 8.5px;
     bottom: 32.5px;
     height: 45px;
