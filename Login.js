@@ -1,6 +1,6 @@
 // set "states" for localStorage
-if (localStorage.getItem("LoggedIn") === null) {
-    localStorage.setItem("LoggedIn", "false");
+if (localStorage.getItem("LogInState") === null) {
+    localStorage.setItem("LogInState", "notLoggedIn");
 }
 
 const LoginForm = document.getElementById("loginform");
@@ -23,7 +23,7 @@ LoginForm.addEventListener("submit", function (event) {
         return false;
     } else {
         // Set login status to 'true'
-        localStorage["LoggedIn"] = "true";
+        localStorage["LogInState"] = "LoggedIn";
         return true;
     }
 })

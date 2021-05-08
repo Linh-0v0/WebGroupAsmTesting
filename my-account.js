@@ -8,7 +8,7 @@ const userEmail = document.getElementById("DisplayEmail");
 userEmail.innerHTML = LoginEmail;
 
 // Redirect the user back to Login page if the user hasn't logged in
-if (localStorage.LoggedIn === null || localStorage.LoggedIn === "false") {
+if (localStorage.LogInState === null || localStorage.LogInState === "notLoggedIn") {
     let url = window.location.href;
     url = url.replace("my-account.html", "Login_box.html");
     window.location.replace(url);
