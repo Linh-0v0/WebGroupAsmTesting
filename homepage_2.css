@@ -42,7 +42,7 @@ body{
 }
 .search-box{
     position: absolute;
-    right: 3.5rem;
+    right: 4rem;
     bottom: 2.2rem;
     border: 2px solid black;
     height: 40px;
@@ -75,7 +75,6 @@ body{
     color: black;
     padding: 5px;
 }
-
 
 .row{
     background-image:url(leaf-background.webp);
