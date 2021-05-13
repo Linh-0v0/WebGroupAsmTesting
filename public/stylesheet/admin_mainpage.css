@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header h1{
+    padding: 15px 15px;
+}
+
+nav .drop-btn{
+    width: 200px;
+    background: #bebebe;
+    color: rgb(95, 95, 95);
+    line-height: 50px;
+    font-family: "Work Sans", serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+nav .drop-btn span{
+    padding-left: 18px;
+    padding-right: 10px;
+    line-height: 50px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+nav .wrapper{
+    width: 200px;
+    background-color: antiquewhite;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+nav .wrapper .show{
+    display: block;
+}
+
+nav .wrapper ul{
+    list-style: none;
+}
+
+nav .wrapper ul li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.wrapper ul li:hover{
+    background: rgba(237, 77, 83, .06);
+    border-left: 3px solid #ff6c60;
+    color: #ff6c60;
+    border-radius: 0 40px 40px 0;
+}
+
+nav .wrapper ul li a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 15px; 
+}
+
+.wrapper ul li a.active{
+    font-weight: bold;
+}
+
+
