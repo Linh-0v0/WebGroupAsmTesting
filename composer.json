@@ -1,11 +1,9 @@
 {
-    "name": "acme/acme-app",
     "require": {
-        "php": "~7.4.9"
+        "php": "~7.4.8"
     },
-    "extra": {
-        "heroku": {
-            "framework": "symfony2"
-        }
+    
+    "heroku": {
+        "framework": "symfony2"
     }
 }
